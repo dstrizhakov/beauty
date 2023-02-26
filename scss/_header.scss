@@ -16,7 +16,7 @@
 	}
 
 	&__contact {
-
+		padding: 10px 0;
 	}
 
 	&__submenu {
@@ -84,8 +84,6 @@ padding: 20px 0;
 	}
 }
 
-
-
 .submenu {
 
 border-top: 1px solid #EFEFEF;
@@ -113,6 +111,33 @@ border-top: 1px solid #EFEFEF;
 	}
 }
 
-// @media (max-width: $tablet) {
+@media (max-width: $mobile) {
+	.header {
+		&__contact {
+			justify-content: center;
+		}
+	}
+	
+	.header-middle {
 
-// }
+		&__body {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		}
+	}
+	.logo {
+			&__image {
+				width: 60px;
+				height: 60px;
+			}
+		
+			&__text {
+				font-size: rem(24);
+				line-height: percent(42, 36);
+				letter-spacing: 0.1em;
+				padding: 0 20px;
+			}
+		}
+		
+}

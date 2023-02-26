@@ -48,10 +48,27 @@
 	&__phone {
 		font-size: rem(16);
 		line-height: percent(19, 16);
-		padding-right: 40px;
 		padding: 10px 25px 10px 10px;
 	}
 
 	&__call {
 	}
+}
+
+@media (max-width: $mobile) {
+	.contact {
+		&__phone {
+			padding: 10px;
+		}
+	
+		&__call {
+		}
+	}
+}
+
+@media (max-width: $mobileSmall) {
+	.contact {
+		flex-direction: column;
+	}
+
 }
