@@ -115,9 +115,14 @@ body.lock {
 
 .button {
   line-height: 114.2857142857%;
-  padding: 0.75rem 1.6875rem;
+  padding: 0.75rem 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
   border: 2px solid #66c05d;
   border-radius: 40px;
+  min-width: 170px;
   transition: all 0.3s ease 0s;
 }
 .button:hover {
@@ -207,6 +212,198 @@ body.lock {
   text-decoration: underline;
 }
 
+.main__slider {
+  background-color: #66C05D;
+  color: #ffffff;
+  overflow: hidden;
+}
+.main__offer {
+  background-color: #EFEFEF;
+}
+.main__contact {
+  background-color: #EFEFEF;
+}
+
+.slider-main__body {
+  height: 604px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-main__content {
+  flex: 0 0 30%;
+}
+.slider-main__content p {
+  padding-bottom: 5px;
+}
+.slider-main__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+.slider-main__button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-top: 45px;
+}
+.slider-main__button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.slider-main__image {
+  flex: 0 1 62%;
+  position: relative;
+  height: 100%;
+}
+.slider-main__image img {
+  position: absolute;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
+}
+.slider-main__image::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: 0;
+  height: 677px;
+  width: 677px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.slider-main__image::after {
+  content: "";
+  position: absolute;
+  top: -117px;
+  left: -90px;
+  height: 859px;
+  width: 859px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.offer-main__body {
+  padding: 100px 0;
+}
+.offer-main__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 16px;
+}
+.offer-main__title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.offer-main__title img {
+  height: 60px;
+  width: 188px;
+}
+.offer-main__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px -15px;
+}
+.offer-main__column {
+  padding: 15px 15px;
+  flex: 0 1 25%;
+  display: flex;
+}
+.offer-main__item {
+  background-color: #ffffff;
+}
+
+.item-offer__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 30px;
+  min-width: 255px;
+  min-height: 100%;
+}
+.item-offer__title {
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+.item-offer__price {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  flex: 1 1 auto;
+}
+.item-offer__button {
+  background-color: #66C05D;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+.item-offer__button:hover {
+  background-color: #82d17b;
+  border: 2px solid #82d17b;
+}
+
+.contact-main__body {
+  padding-bottom: 132px;
+}
+.contact-main__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px -15px;
+}
+.contact-main__column {
+  padding: 15px 15px;
+  flex: 1 1 50%;
+}
+.contact-main__item {
+  min-height: 100%;
+  background-color: #66C05D;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 45px 35px 40px;
+}
+
+.item-contact__content {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.item-contact__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.item-contact__text {
+  padding-right: 10px;
+  flex: 1 1 auto;
+}
+.item-contact__input {
+  padding: 9px 25px;
+  border-radius: 30px;
+}
+.item-contact__button {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease 0s;
+}
+.item-contact__button:hover {
+  color: #ffffff;
+  background-color: #82d17b;
+}
+
 .footer__top {
   background-color: #ffffff;
 }
@@ -224,10 +421,15 @@ body.lock {
 }
 .top-footer__social {
   display: flex;
+  padding: 10px 0;
 }
 .top-footer__adress {
   white-space: nowrap;
 }
+.top-footer__contact {
+  padding: 10px 0;
+}
+
 .social__link {
   display: inline-flex;
   justify-content: center;

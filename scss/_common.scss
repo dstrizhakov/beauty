@@ -23,13 +23,18 @@
 
 .button {
 	line-height: percent(16, 14);
-	padding: rem(12) rem(27);
+	padding: rem(12) 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
 	border: 2px solid #66c05d;
-border-radius: 40px;
-transition: all 0.3s ease 0s;
-&:hover {
-	background-color: #66c05d;
-	color: #ffffff;
+	border-radius: 40px;
+	min-width: 170px;
+	transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: #66c05d;
+			color: #ffffff;
 }
 }
 

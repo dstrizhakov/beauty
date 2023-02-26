@@ -26,6 +26,7 @@
 
 	&__social {
 		display: flex;
+		padding: 10px 0;
 		// gap: 20px;
 	}
 
@@ -34,6 +35,7 @@
 	}
 
 	&__contact {
+		padding: 10px 0;
 	}
 }
 .social {
@@ -72,6 +74,9 @@
 			line-height: percent(14, 12);
 			color: #828282;
 			padding: rem(25) 0;
+			& a {
+				// white-space: nowrap;
+			}
 			& a:hover {
 				text-decoration: underline;
 			}
