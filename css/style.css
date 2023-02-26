@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #000000;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+}
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+[class*=__container] {
+  max-width: 69.375rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+.button {
+  line-height: 114.2857142857%;
+  padding: 0.75rem 1.6875rem;
+  border: 2px solid #66c05d;
+  border-radius: 40px;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  background-color: #66c05d;
+  color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact__phone {
+  font-size: 1rem;
+  line-height: 118.75%;
+  padding-right: 40px;
+  padding: 10px 25px 10px 10px;
+}
+.header__menu {
+  background-color: #efefef;
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu__item {
+  padding: 0.5625rem 0.5rem;
+}
+.menu__link {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  color: #333333;
+  line-height: 114.2857142857%;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.header-middle__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo__image {
+  width: 80px;
+  height: 80px;
+}
+.logo__text {
+  text-transform: uppercase;
+  color: #66c05d;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 116.6666666667%;
+  letter-spacing: 0.1em;
+  padding: 0 20px;
+}
+
+.submenu {
+  border-top: 1px solid #EFEFEF;
+}
+.submenu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.submenu__item {
+  padding: 20px 10px;
+}
+.submenu__link {
+  padding: 10px 10px;
+}
+.submenu__link:hover {
+  text-decoration: underline;
+}
+
+.footer__top {
+  background-color: #ffffff;
+}
+.footer__bottom {
+  background-color: #efefef;
+}
+
+.top-footer__body {
+  min-height: 121px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.top-footer__social {
+  display: flex;
+}
+.top-footer__adress {
+  white-space: nowrap;
+}
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #66c05d;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: all 0.3s ease 0s;
+}
+.social__link:hover {
+  background-color: #66c05d;
+  color: #ffffff;
+}
+.social__link:hover img {
+  filter: grayscale(1) contrast(3);
+}
+
+.bottom-footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-footer__body span {
+  font-size: 0.75rem;
+  line-height: 116.6666666667%;
+  color: #828282;
+  padding: 1.5625rem 0;
+}
+.bottom-footer__body span a:hover {
+  text-decoration: underline;
+}
+.bottom-footer__body span:not(:last-child) {
+  padding-right: 15px;
+}
