@@ -11,9 +11,6 @@
 }
 .top-footer {
 
-	&__container {
-	}
-
 	&__body {
 		min-height: 121px;
 		display: flex;
@@ -38,6 +35,7 @@
 		padding: 10px 0;
 	}
 }
+
 .social {
 
 	&__link {
@@ -86,3 +84,35 @@
 		}
 	}
 }
+
+
+@media (max-width: $mobile) {
+	.top-footer {
+
+		&__body {
+			justify-content: center;
+		}
+	
+		&__social {
+			padding: 15px 0;
+		}
+	
+		&__contact {
+			padding: 15px 0;
+		}
+	}
+
+	.bottom-footer {
+
+		&__body {
+		flex-direction: column;
+		align-items: center;
+
+			& span {
+				text-align: center;
+				padding: 15px 0;
+			}
+		}
+	}
+}
+
