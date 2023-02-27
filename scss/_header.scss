@@ -2,34 +2,16 @@
 
 .header {
 
-	&__wrapper {
-	}
-
-	&__body {
-	}
-
 	&__menu {
 		background-color: $mainBackgroundColor;
-	}
-
-	&__logo {
 	}
 
 	&__contact {
 		padding: 10px 0;
 	}
-
-	&__submenu {
-	}
 }
+
 .menu {
-
-	&__container {
-	}
-
-	&__body {
-		
-	}
 
 	&__list {
 		display: flex;
@@ -52,10 +34,9 @@
 		}
 	}
 }
+
 .header-middle {
 
-	&__container {
-	}
 	&__body {
 		display: flex;
 		justify-content: space-between;
@@ -63,11 +44,12 @@
 
 	}
 }
+
 .logo {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding: 20px 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: rem(20) 0;
 	&__image {
 		width: 80px;
 		height: 80px;
@@ -99,12 +81,12 @@ border-top: 1px solid #EFEFEF;
 	}
 
 	&__item {
-		padding: 20px 10px;
+		padding: rem(20) rem(10);
 	
 	}
 
 	&__link {
-		padding: 10px 10px;
+		padding: rem(10) rem(10);
 		&:hover {
 			text-decoration: underline;
 		}
@@ -133,10 +115,7 @@ border-top: 1px solid #EFEFEF;
 			}
 		
 			&__text {
-				font-size: rem(24);
-				line-height: percent(42, 36);
-				letter-spacing: 0.1em;
-				padding: 0 20px;
+				font-size: rem(28);
 			}
 		}
 		
