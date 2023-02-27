@@ -18,11 +18,8 @@
 
 .slider-main {
 
-	&__container {
-	}
-
 	&__body {
-		height: 604px;
+		height: rem(604);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -32,21 +29,21 @@
 		flex: 0 0 30%;
 	}
 	&__content p {
-		padding-bottom: 5px;
+		padding-bottom: rem(5);
 	}
 
 	&__title {
 		font-weight: 700;
-		font-size: 48px;
-		line-height: 56px;
+		font-size: rem(48);
+		line-height: percent(56, 48);
 		white-space: nowrap;
-		margin-bottom: 50px;
+		margin-bottom: rem(50);
 	}
 
 	&__button {
 		border: 2px solid #ffffff;
 		color: #ffffff;
-		margin-top: 45px;
+		margin-top: rem(45);
 		&:hover {
 			color: #000000;
 			background-color: #ffffff;
@@ -89,24 +86,24 @@
 .offer-main {
 
 	&__body {
-		padding: 100px 0;
+		padding: rem(100) 0;
 		
 	}
 
 	&__title {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: -20px;
-margin-bottom: 16px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: rem(-20);
+		margin-bottom: rem(16);
 		& h2 {
 			font-weight: 700;
-			font-size: 24px;
-			line-height: 28px;
+			font-size: rem(24);
+			line-height: percent(28, 24);
 		}
 		& img {
-			height: 60px;
-			width: 188px;
+			height: rem(60);
+			width: rem(188);
 		}
 	}
 
@@ -126,8 +123,6 @@ margin-bottom: 16px;
 
 	&__item {
 		background-color: #ffffff;
-		// display: flex;
-		// flex-direction: column;
 	}
 }
 
@@ -136,28 +131,29 @@ margin-bottom: 16px;
 	&__body {
 		display: flex;
 		flex-direction: column;
-		// justify-content: space-between;
 		align-items: center;
-		gap: 20px;
-		padding: 25px 30px;
-		min-width: 255px;
+		padding: rem(25) rem(30);
+		min-width: rem(255);
 		min-height: 100%;
 	}
 
 	&__image {
+		padding-bottom: rem(20);
 		
 	}
 
 	&__title {
-		line-height: 20px;
+		line-height: percent(20, 14);
 		text-align: center;
 		color: #333333;
+		padding-bottom: rem(20);
 	}
 
 	&__price {
+		padding-bottom: rem(20);
 		font-weight: 500;
-		font-size: 21px;
-		line-height: 25px;
+		font-size: rem(21);
+		line-height: percent(25, 21);
 		text-align: center;
 		letter-spacing: 0.05em;
 		color: #000000;
@@ -177,11 +173,8 @@ margin-bottom: 16px;
 
 .contact-main {
 
-	&__container {
-	}
-
 	&__body {
-		padding-bottom: 132px;
+		padding-bottom: rem(132);
 	}
 
 	&__row {
@@ -202,7 +195,7 @@ margin-bottom: 16px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 35px 45px 35px 40px;
+		padding: rem(35) rem(45) rem(35) rem(40);
 	}
 }
 
@@ -213,26 +206,24 @@ margin-bottom: 16px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 25px;
 	}
 
 	&__title {
 		font-weight: 700;
-		font-size: 18px;
-		line-height: 21px;
+		font-size: rem(18);
+		line-height: percent(21, 18);
+		padding-bottom: rem(25);
 	}
 
 	&__text {
 		padding-right: 10px;
 		flex: 1 1 auto;
+		padding-bottom: 25px;
 	}
 
 	&__input {
 		padding: 9px 25px;
 		border-radius: 30px;
-	}
-
-	&__image {
 	}
 
 	&__button {
@@ -252,16 +243,16 @@ margin-bottom: 16px;
 	.slider-main {
 	
 		&__body {
-			height: 400px;
+			height: rem(400);
 		}
 
 		&__title {
-			font-size: 32px;
-			margin-bottom: 25px;
+			font-size: rem(32);
+			margin-bottom: rem(25);
 		}
 	
 		&__button {
-			margin-top: 25px;
+			margin-top: rem(25);
 		}
 	
 		&__image {
@@ -275,8 +266,8 @@ margin-bottom: 16px;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				height: 400px;
-				width: 400px;
+				height: rem(400);
+				width: rem(400);
 				background-color: rgba(255, 255, 255, 0.4);
 				border-radius: 50%;
 			}
@@ -295,17 +286,21 @@ margin-bottom: 16px;
 	}
 
 	.offer-main {
+		&__container {
+			padding: 0 rem(10);
+		}
 
 		&__body {
-			padding: 60px 0;
+			padding: rem(60) 0;
 		}
 	
 		&__title {
 	margin-top: 0;
+	padding: 0 rem(10);
 
 			& img {
-				height: 30px;
-				width: 94px;
+				height: rem(30);
+				width: rem(94);
 			}
 		}
 	
@@ -322,47 +317,28 @@ margin-bottom: 16px;
 .contact-main {
 
 	&__container {
+		padding: 0 rem(10);
 	}
 
 	&__body {
-		padding-bottom: 60px;
+		padding-bottom: rem(60);
 	}
 
 	&__item {
-		padding: 20px;
-
+		padding: rem(20);
 	}
 }
 
 .item-contact {
-	
-	&__content {
-		flex: 0 0 60%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 25px;
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 21px;
-	}
 
 	&__text {
-		padding-right: 10px;
-		flex: 1 1 auto;
-	}
-
-	&__input {
-		padding: 9px 25px;
-		border-radius: 30px;
+		padding-right: 0;
 	}
 
 	&__image {
 		& img {
-			height: 40px;
+			width: rem(80);
+			object-fit: cover;
 		}
 	}
 }
@@ -372,46 +348,37 @@ margin-bottom: 16px;
 	.slider-main {
 	
 		&__body {
-			height: 250px;
+			height: rem(250);
 		}
 
 		&__title {
-			font-size: 24px;
-			margin-bottom: 15px;
+			font-size: rem(24);
+			margin-bottom: rem(15);
 		}
 	
 		&__button {
-			margin-top: 15px;
+			margin-top: rem(15);
 		}
 	
 		&__image {
-	
+
 			&::before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				height: 280px;
-				width: 280px;
-				background-color: rgba(255, 255, 255, 0.4);
-				border-radius: 50%;
+				height: rem(280);
+				width: rem(280);
 			}
 			&::after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				height: 400px;
-				width: 400px;
-				background-color: rgba(255, 255, 255, 0.3);
-				border-radius: 50%;
-			}
+				height: rem(400);
+				width: rem(400);
 		}
 	}
 }
-
+.item-contact {
+	
+		&__image {
+		display: none;
+		}
+	}
+}
 
 
 

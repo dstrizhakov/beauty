@@ -122,7 +122,7 @@ body.lock {
   color: #000000;
   border: 2px solid #66c05d;
   border-radius: 40px;
-  min-width: 170px;
+  min-width: 10.625rem;
   transition: all 0.3s ease 0s;
 }
 .button:hover {
@@ -132,9 +132,9 @@ body.lock {
 
 .contact {
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-  row-gap: 5px;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  row-gap: 0.3125rem;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
@@ -142,11 +142,12 @@ body.lock {
 .contact__phone {
   font-size: 1rem;
   line-height: 118.75%;
-  padding: 10px 25px 10px 10px;
+  padding: 0.625rem 1.5625rem 0.625rem 0.625rem;
 }
+
 @media (max-width: 47.99875em) {
   .contact__phone {
-    padding: 10px;
+    padding: 0.625rem;
   }
 }
 @media (max-width: 29.99875em) {
@@ -160,6 +161,7 @@ body.lock {
 .header__contact {
   padding: 10px 0;
 }
+
 .menu__list {
   display: flex;
   justify-content: center;
@@ -189,7 +191,7 @@ body.lock {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .logo__image {
   width: 80px;
@@ -215,10 +217,10 @@ body.lock {
   flex-wrap: wrap;
 }
 .submenu__item {
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
 }
 .submenu__link {
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
 }
 .submenu__link:hover {
   text-decoration: underline;
@@ -237,10 +239,7 @@ body.lock {
     height: 60px;
   }
   .logo__text {
-    font-size: 1.5rem;
-    line-height: 116.6666666667%;
-    letter-spacing: 0.1em;
-    padding: 0 20px;
+    font-size: 1.75rem;
   }
 }
 .main__slider {
@@ -256,7 +255,7 @@ body.lock {
 }
 
 .slider-main__body {
-  height: 604px;
+  height: 37.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -265,19 +264,19 @@ body.lock {
   flex: 0 0 30%;
 }
 .slider-main__content p {
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
 }
 .slider-main__title {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3rem;
+  line-height: 116.6666666667%;
   white-space: nowrap;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .slider-main__button {
   border: 2px solid #ffffff;
   color: #ffffff;
-  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 .slider-main__button:hover {
   color: #000000;
@@ -317,23 +316,23 @@ body.lock {
 }
 
 .offer-main__body {
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 .offer-main__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -20px;
-  margin-bottom: 16px;
+  margin-top: -1.25rem;
+  margin-bottom: 1rem;
 }
 .offer-main__title h2 {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 116.6666666667%;
 }
 .offer-main__title img {
-  height: 60px;
-  width: 188px;
+  height: 3.75rem;
+  width: 11.75rem;
 }
 .offer-main__row {
   display: flex;
@@ -354,20 +353,24 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 25px 30px;
-  min-width: 255px;
+  padding: 1.5625rem 1.875rem;
+  min-width: 15.9375rem;
   min-height: 100%;
 }
+.item-offer__image {
+  padding-bottom: 1.25rem;
+}
 .item-offer__title {
-  line-height: 20px;
+  line-height: 142.8571428571%;
   text-align: center;
   color: #333333;
+  padding-bottom: 1.25rem;
 }
 .item-offer__price {
+  padding-bottom: 1.25rem;
   font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.3125rem;
+  line-height: 119.0476190476%;
   text-align: center;
   letter-spacing: 0.05em;
   color: #000000;
@@ -384,7 +387,7 @@ body.lock {
 }
 
 .contact-main__body {
-  padding-bottom: 132px;
+  padding-bottom: 8.25rem;
 }
 .contact-main__row {
   display: flex;
@@ -402,7 +405,7 @@ body.lock {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 45px 35px 40px;
+  padding: 2.1875rem 2.8125rem 2.1875rem 2.5rem;
 }
 
 .item-contact__content {
@@ -410,16 +413,17 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
 }
 .item-contact__title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 116.6666666667%;
+  padding-bottom: 1.5625rem;
 }
 .item-contact__text {
   padding-right: 10px;
   flex: 1 1 auto;
+  padding-bottom: 25px;
 }
 .item-contact__input {
   padding: 9px 25px;
@@ -437,14 +441,14 @@ body.lock {
 
 @media (max-width: 47.99875em) {
   .slider-main__body {
-    height: 400px;
+    height: 25rem;
   }
   .slider-main__title {
-    font-size: 32px;
-    margin-bottom: 25px;
+    font-size: 2rem;
+    margin-bottom: 1.5625rem;
   }
   .slider-main__button {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
   }
   .slider-main__image {
     width: 100%;
@@ -458,8 +462,8 @@ body.lock {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
-    width: 400px;
+    height: 25rem;
+    width: 25rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
   }
@@ -474,15 +478,19 @@ body.lock {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
   }
+  .offer-main__container {
+    padding: 0 0.625rem;
+  }
   .offer-main__body {
-    padding: 60px 0;
+    padding: 3.75rem 0;
   }
   .offer-main__title {
     margin-top: 0;
+    padding: 0 0.625rem;
   }
   .offer-main__title img {
-    height: 30px;
-    width: 94px;
+    height: 1.875rem;
+    width: 5.875rem;
   }
   .offer-main__column {
     flex: 1 1 25%;
@@ -490,68 +498,45 @@ body.lock {
   .offer-main__item {
     width: 100%;
   }
+  .contact-main__container {
+    padding: 0 0.625rem;
+  }
   .contact-main__body {
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
   }
   .contact-main__item {
-    padding: 20px;
-  }
-  .item-contact__content {
-    flex: 0 0 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 25px;
-  }
-  .item-contact__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    padding: 1.25rem;
   }
   .item-contact__text {
-    padding-right: 10px;
-    flex: 1 1 auto;
-  }
-  .item-contact__input {
-    padding: 9px 25px;
-    border-radius: 30px;
+    padding-right: 0;
   }
   .item-contact__image img {
-    height: 40px;
+    width: 5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 29.99875em) {
   .slider-main__body {
-    height: 250px;
+    height: 15.625rem;
   }
   .slider-main__title {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 0.9375rem;
   }
   .slider-main__button {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
   }
   .slider-main__image::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 280px;
-    width: 280px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
+    height: 17.5rem;
+    width: 17.5rem;
   }
   .slider-main__image::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    width: 400px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+  }
+  .item-contact__image {
+    display: none;
   }
 }
 .footer__top {
@@ -562,22 +547,22 @@ body.lock {
 }
 
 .top-footer__body {
-  min-height: 121px;
+  min-height: 7.5625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 0.625rem;
 }
 .top-footer__social {
   display: flex;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 .top-footer__adress {
   white-space: nowrap;
 }
 .top-footer__contact {
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .social__link {
@@ -588,7 +573,7 @@ body.lock {
   height: 45px;
   border: 2px solid #66c05d;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   transition: all 0.3s ease 0s;
 }
 .social__link:hover {
@@ -614,7 +599,7 @@ body.lock {
   text-decoration: underline;
 }
 .bottom-footer__body span:not(:last-child) {
-  padding-right: 15px;
+  padding-right: 0.9375rem;
 }
 
 @media (max-width: 47.99875em) {
@@ -622,10 +607,10 @@ body.lock {
     justify-content: center;
   }
   .top-footer__social {
-    padding: 15px 0;
+    padding: 0.9375rem 0;
   }
   .top-footer__contact {
-    padding: 15px 0;
+    padding: 0.9375rem 0;
   }
   .bottom-footer__body {
     flex-direction: column;
@@ -633,6 +618,6 @@ body.lock {
   }
   .bottom-footer__body span {
     text-align: center;
-    padding: 15px 0;
+    padding: 0.9375rem 0;
   }
 }

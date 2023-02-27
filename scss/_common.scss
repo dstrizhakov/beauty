@@ -1,25 +1,3 @@
-// .button {
-// 	display: inline-flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	padding: rem(24);
-// 	min-width: rem(205);
-// 	background-color: #444240;
-// 	color: #ffffff;
-// 	transition: all 0.3s ease 0s;
-// }
-
-// .button:hover {
-// 	background-color: #676666;
-// }
-
-// .subtitle {
-// 	font-family: 'Playfair+Display', serif;
-// 	font-size: rem(30);
-// 	line-height: percent(40, 30);
-// 	color: #1b1a17;
-// 	white-space: nowrap;
-// }
 
 .button {
 	line-height: percent(16, 14);
@@ -30,7 +8,7 @@
 	color: #000000;
 	border: 2px solid #66c05d;
 	border-radius: 40px;
-	min-width: 170px;
+	min-width: rem(170);
 	transition: all 0.3s ease 0s;
 		&:hover {
 			background-color: #66c05d;
@@ -40,28 +18,22 @@
 
 .contact {
 	display: flex;
-	column-gap: 15px;
-	row-gap: 5px;
+	column-gap: rem(15);
+	row-gap: rem(5);
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
 	&__phone {
 		font-size: rem(16);
 		line-height: percent(19, 16);
-		padding: 10px 25px 10px 10px;
-	}
-
-	&__call {
+		padding: rem(10) rem(25) rem(10) rem(10);
 	}
 }
 
 @media (max-width: $mobile) {
 	.contact {
 		&__phone {
-			padding: 10px;
-		}
-	
-		&__call {
+			padding: rem(10);
 		}
 	}
 }
